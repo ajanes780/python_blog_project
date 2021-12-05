@@ -8,8 +8,8 @@ def index(responce):
     return render(responce, "blog/index.html")
 
 
-def posts(reg):
-    pass
+def posts(req):
+    return render(req, "blog/all-posts.html")
 
 
 def post_detail(req):
