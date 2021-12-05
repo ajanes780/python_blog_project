@@ -1,16 +1,14 @@
 from django.shortcuts import render
 
-# Create your views here.
 
+def index(req):
 
-def index(responce):
-
-    return render(responce, "blog/index.html")
+    return render(req, "blog/index.html")
 
 
 def posts(req):
     return render(req, "blog/all-posts.html")
 
 
-def post_detail(req):
-    pass
+def post_detail(req, slug):
+    return render(req, "blog/post-detail-page.html", )

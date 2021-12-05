@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css-files %}
+<link rel="stylesheet" href={% static 'blog/post-detail.css' %}>
+
+
+{% endblock css-files %} 
+{% block title %} 
+This Post's Ttle
+{% endblock title %}
+{% block content-body %}
+
+
+<section id="summary">
+  <h2>Post Title</h2>
+    <article>
+      <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
+        <address>By Aaron
+          <div>last Updated on <time> July 10th 2021 </time> </div>
+        </address>
+      </img>
+    </article>
+  
+
+  <main>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ratione iste dolores modi omnis perspiciatis ducimus illo enim natus aliquid!</p>
+  </main>
+</section>
+
+
+
+
+{% endblock content-body %}
