@@ -13,11 +13,11 @@ This Post's Ttle
 
 
 <section id="summary">
-  <h2>Post Title</h2>
+  <h2>{{post.title}}</h2>
     <article>
       <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
         <address>By Aaron
-          <div>last Updated on <time> July 10th 2021 </time> </div>
+          <div>last Updated on <time> {{post.date}}</time> </div>
         </address>
       </img>
     </article>
@@ -30,5 +30,6 @@ This Post's Ttle
     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sed hic animi vitae quaerat accusamus eum corrupti, aliquid sunt consequuntur. Fuga cumque quas quod blanditiis quidem dolor quis non neque reprehenderit alias perspiciatis, id eos mollitia laboriosam libero molestiae, saepe illo ipsa natus corporis? Dolore error architecto dolores autem et. </p>
   </main>
 
+  
 
 {% endblock content-body %}
